@@ -1,0 +1,37 @@
+! name: Haskell
+! description: Rerank results to boost content related to the Haskell programming language.
+! author: remusao
+! public: true
+! avatar: #5e5086
+! homepage: https://github.com/remusao/haskell-goggle
+! issues: https://github.com/remusao/haskell-goggle/issues
+
+$discard
+
+! Specific haskell content
+$boost=3,site=haskell.org
+$boost=3,site=haskell.fr
+$boost=3,site=haskellstack.org
+/r/haskell^$boost=3,site=reddit.com
+/r/haskellgamedev^$boost=3,site=reddit.com
+/r/haskell_proposals^$boost=3,site=reddit.com
+/r/haskellquestions^$boost=3,site=reddit.com
+/commercialhaskell/$boost=3,site=github.com
+/fpco/$boost=3,site=github.com
+/haskell/$boost=3,site=github.com
+*haskell*$boost=3
+$boost=3,site=fpcomplete.com
+$boost=3,site=stackage.org
+$boost=3,site=haskellforall.com
+$boost=3,site=haskellweekly.news
+$boost=3,site=haskellnews.org
+/blog/$boost=3,site=serpentine.com
+
+! More generic results where Haskell content might also be found
+/r/programming^*haskell*$boost=2,site=reddit.com
+/r/functionalprogramming^*haskell*$boost=2,site=reddit.com
+/r/rust^*haskell*$boost=2,site=reddit.com
+/r/elm^*haskell*$boost=2,site=reddit.com
+/r/adventofcode^*haskell*$boost=2,site=reddit.com
+/r/ocaml^*haskell*$boost=2,site=reddit.com
+*haskell*$boost=2,site=stackoverflow.com
