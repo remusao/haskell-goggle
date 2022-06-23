@@ -20,12 +20,34 @@ $boost=3,site=haskellstack.org
 /fpco/$boost=3,site=github.com
 /haskell/$boost=3,site=github.com
 *haskell*$boost=3
-$boost=3,site=fpcomplete.com
 $boost=3,site=stackage.org
 $boost=3,site=haskellforall.com
 $boost=3,site=haskellweekly.news
 $boost=3,site=haskellnews.org
 /blog/$boost=3,site=serpentine.com
+/blog/haskell^$boost=3,site=serokell.io
+/blog/*haskell*$boost=3,site=serokell.io
+/posts/$boost=3,site=chrisdone.com
+/posts/$boost=3,site=stephendiehl.com
+*haskell*$boost=3,site=reasonablypolymorphic.com
+*haskell*$boost=3,site=blog.ezyang.com
+/blog/*haskell*$boost=3,site=tweag.io
+/blog/*haskell*$boost=3,site=well-typed.com
+/blog/*haskell*$boost=3,site=fpcomplete.com
+/blog/*haskell*$boost=3,site=conal.net
+*haskell*$boost=3,site=byorgey.wordpress.com
+/articles/*haskell*$boost=3,site=ro-che.info
+/blog/$boost=3,site=blog.ocharles.org.uk
+$boost=3,site=yesodweb.com
+/reader/$boost=3,site=comonad.com
+$boost=3,site=bartoszmilewski.com
+$boost=3,site=blog.jle.im
+$boost=3,site=lexi-lambda.github.io
+$boost=3,site=nikita-volkov.github.io
+$boost=3,site=blog.johantibell.com
+
+! TODO - we should check title/description here
+/posts/$site=jaspervdj.be
 
 ! More generic results where Haskell content might also be found
 /r/programming^*haskell*$boost=2,site=reddit.com
